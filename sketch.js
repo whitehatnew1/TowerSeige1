@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var engine, world;
-var holder,ball,ground;
+var holder,ball,ground1;
 var stand1,stand2;
 var ball;
 var slingShot;
@@ -17,7 +17,7 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   Engine.run(engine);
-  ground = new Ground();
+  ground1 = new Ground();
   stand1 = new Stand(390,300,250,10);
   stand2 = new Stand(700,200,200,10);
  
@@ -73,7 +73,7 @@ function draw() {
   fill("lightyellow");
   text("Drag the Hexagonal Stone and Release it, to launch it towards the blocks",100,30);
 
-  ground.display();
+  ground1.display();
   stand1.display();
   stand2.display();
   strokeWeight(2);
